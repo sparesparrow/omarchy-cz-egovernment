@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "sparesparrow.egovernment",
+  "name": "Czech eGovernment",
+  "version": "0.2.0",
+  "author": "sparesparrow",
+  "license": "MIT",
+  "description": "Safe launch shortcuts for Czech Citizen Portal, Identity of Citizen and Data Boxes.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "Egovernment.qml"
+  },
+  "barWidget": {
+    "displayName": "CZ eGovernment",
+    "description": "Left: Citizen Portal; middle: Data Boxes; right: MF electronic identity verification (NIA). No automatic authentication.",
+    "category": "Utilities",
+    "defaultSection": "right",
+    "allowMultiple": false
+  }
+}

@@ -1,0 +1,3 @@
+# Pouze pro výslovně povolenou lokální integraci SOAP/ISDS
+zeep>=4.2,<5
+requests>=2.31,<3

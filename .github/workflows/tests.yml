@@ -1,0 +1,16 @@
+name: Tests
+on:
+  push:
+  pull_request:
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Manifest and static QML tests
+        run: python -m unittest discover -s tests -v
+      - name: Agent skill tests
+        run: python -m unittest discover -s agents/cz-egovernment/tests -v
